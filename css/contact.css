@@ -19,7 +19,8 @@ main {
 .formulario {
 	margin-top: 50px;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr, 1fr;
+
 	gap: 20px;
 }
 
@@ -76,6 +77,7 @@ main {
 
 .formulario__grupo-terminos, 
 .formulario__mensaje,
+.formulario__grupo-motivo,
 .formulario__grupo-btn-enviar {
 	grid-column: span 2;
 }

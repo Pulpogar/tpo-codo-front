@@ -104,20 +104,26 @@ main {
 }
 
 .formulario__btn {
-	height: 45px;
-	line-height: 45px;
-	width: 30%;
-	background: #000;
-	color: #fff;
-	font-weight: bold;
-	border: none;
-	border-radius: 3px;
+	margin: 30px;
 	cursor: pointer;
-	transition: .1s ease all;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 40px;
+	width: 160px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
 }
 
 .formulario__btn:hover {
 	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+	background: #137c32;
 }
 
 .formulario__mensaje-exito {

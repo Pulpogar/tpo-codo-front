@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The MovieDB | Inicio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<nav class="navbar">
+		<a class="navbar" href="index.html">Inicio</a>
+		<a class="navbar" href="/css/">TMBD Api</a>
+		<a class="navbar" href="/js/">Estadísticas</a>
+		<a class="navbar" href="contact.html">Contacto</a>
+	  </nav>	  
+
+
+	<div id="modal_container" class="modal-container">
+	<div class="modal">			
+		</div>
+		<button id="close">Cerrar</button>
+	</div>
+  
+	<div class="iframe-container">
+		<div class="embed-container">
+			<iframe src="https://www.youtube.com/embed/9d8wWcJLnFI" frameborder="0" allowfullscreen></iframe>
+		  </div>
+	</div>
+
+	<div class="filter" id="filter">
+		<label for="filter-opt">Mostrar</label>
+		  <select id="filter-opt">
+			  <option value="popular">Más populares</option>
+			  <option value="top_rated">Mejor valoradas</option>
+		  </select>
+		</div>  
+
+	<div class="contenedor" id="contenedor"></div>	
+
+	<div class="paginacion">
+		<button id="btnAnterior">Anterior</button>
+		<button id="btnSiguiente">Siguiente</button>
+	</div>
+
+
+	<script src="app.js"></script>
+</body>
+<!-- <footer class="paginacion">Todos los derechos reservados</footer> -->
+</html>

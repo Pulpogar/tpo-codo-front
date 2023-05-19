@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>The MovieDB | Inicio</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-	<nav class="navbar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The MovieDB | Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- <nav class="navbar">
 		<a class="navbar" href="index.html">Inicio</a>
 		<a class="navbar" href="/css/">TMDB Api</a>
 		<a class="navbar" href="/js/">Estadísticas</a>
 		<a class="navbar" href="contact.html">Contacto</a>
-	  </nav>	  
+	  </nav>	   -->
 
+    <header class="header">
 
-	<div id="modal_container" class="modal-container">
-	<div class="modal">			
-		</div>
-		<button id="close">Cerrar</button>
-	</div>
-  
-	<div class="iframe-container">
-		<div class="embed-container">
-			<iframe src="https://www.youtube.com/embed/-xDq2iPzTgo" frameborder="0" 
-				allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-			</iframe>
-		  </div>
-	</div>
+      <button class="button">
+        <svg
+          class="svg"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
 
-	<div class="filter" id="filter">
-		<label for="filter-opt">Mostrar</label>
-		  <select id="filter-opt">
-			  <option value="popular">Más populares</option>
-			  <option value="top_rated">Mejor valoradas</option>
-		  </select>
-		</div>  
+      <nav class="nav">
+        <ul class="ul">
+          <li class="li"><a href="index.html" class="a">Inicio</a></li>
+          <li class="li"><a href="#" class="a">TMDB Api</a></li>
+          <li class="li"><a href="#" class="a">Estadísticas</a></li>
+          <li class="li"><a href="contact.html" class="a">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </header>
 
-	<div class="contenedor" id="contenedor"></div>	
+    <div id="modal_container" class="modal-container">
+      <div class="modal"></div>
+      <button id="close">Cerrar</button>
+    </div>
 
-	<div class="paginacion">
-		<button id="btnAnterior">Anterior</button>
-		<button id="btnSiguiente">Siguiente</button>
-	</div>
+    <div class="iframe-container">
+      <div class="embed-container">
+        <iframe
+          src="https://www.youtube.com/embed/-xDq2iPzTgo"
+          frameborder="0"
+          allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        >
+        </iframe>
+      </div>
+    </div>
 
+    <div class="filter" id="filter">
+      <label for="filter-opt">Mostrar</label>
+      <select id="filter-opt">
+        <option value="popular">Más populares</option>
+        <option value="top_rated">Mejor valoradas</option>
+      </select>
+    </div>
 
-	<script src="app.js"></script>
-</body>
-<!-- <footer class="paginacion">Todos los derechos reservados</footer> -->
+    <div class="contenedor" id="contenedor"></div>
+
+    <div class="paginacion">
+      <button id="btnAnterior">Anterior</button>
+      <button id="btnSiguiente">Siguiente</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+  <!-- <footer class="paginacion">Todos los derechos reservados</footer> -->
 </html>

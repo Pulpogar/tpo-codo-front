@@ -1,17 +1,20 @@
 let pagina = 1;
 const btnAnterior = document.getElementById('btnAnterior');
 const btnSiguiente = document.getElementById('btnSiguiente');
-//const open = document.getElementById('open');
 const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('close');
 const filter = document.getElementById('filter-opt');
+const button = document.querySelector('.button')
+const nav = document.querySelector('.nav')
+
+button.addEventListener('click',()=>{
+    nav.classList.toggle('activo')
+})
 
 filter.addEventListener("change", function() {
 	pagina = 1;
 	cargarPeliculas(filter.value);
 });
-
-
 
 btnSiguiente.addEventListener('click', () => {
 	if(pagina < 1000){
@@ -27,10 +30,6 @@ btnAnterior.addEventListener('click', () => {
 	}
 });
 
-// open.addEventListener('click', () => {
-//  modal_container.classList.add('show');  
-// });
-
 close.addEventListener('click', () => {
   modal_container.classList.remove('show');
 });
@@ -38,7 +37,6 @@ close.addEventListener('click', () => {
 function btnClose () {
 	modal_container.classList.remove('show');
 }
-
 
 const getMovie = async(id) => {  
 	try {

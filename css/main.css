@@ -196,7 +196,7 @@ body {
 .contenedor {
 	width: 90%;
 	max-width: 1000px;
-	margin: 20px auto 10px auto;
+	margin: 20px auto 80px auto;
 
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -216,6 +216,7 @@ body {
 
 .contenedor .pelicula {
 	text-align: center;
+	/* margin-bottom: 80px; */
 }
 
 .contenedor .pelicula .card {

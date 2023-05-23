@@ -123,7 +123,8 @@ body {
 
 .header{
   width:100%;
-  background-color: #282828;
+  background-color: #16113c;
+  /* background-color: #282828; */
   padding: 1em;
 
   display: flex;
@@ -278,7 +279,7 @@ body {
 .paginacion {
 	position: fixed;
 	bottom: 0;
-	background: #100a1f;
+	background: #16113c;
 	width: 100%;
 	display: flex;
 	justify-content: center;

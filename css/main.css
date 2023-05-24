@@ -146,15 +146,17 @@ body {
 }
 
 .header .ul{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: center;  
-}
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+  	column-gap:2em;
+	}
+  
+.header .li:hover {
+	color: rgb(38, 198, 238) 
+	}
 
-.header .li{
-  margin: 0 .5em;
-}
 
 #filter-opt {
 	background:#ccc;

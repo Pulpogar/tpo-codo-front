@@ -407,10 +407,6 @@ footer{
 	color:white;
   }
 
-footer:hover {
-	color: rgb(38, 198, 238);
-}
-
 @media screen and (max-width: 1780px) {
 
 	.contenedor {

@@ -154,7 +154,7 @@ body {
 	}
   
 .header .li:hover {
-	color: rgb(38, 198, 238) 
+	color: rgb(38, 198, 238);
 	}
 
 
@@ -292,7 +292,7 @@ body {
 }
 
 .paginacion {
-	position: fixed;
+	/* position: fixed; */
 	bottom: 0;
 	background: #16113c;
 	width: 100%;
@@ -320,7 +320,8 @@ body {
 }
 
 .paginacion button:hover {
-	background: #137c32;
+	/* background: #137c32; */
+	background: rgb(38, 198, 238);
 }
 
 .modal-container {

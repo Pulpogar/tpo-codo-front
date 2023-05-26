@@ -155,51 +155,8 @@ body {
   
 .header .li:hover {
 	color: rgb(38, 198, 238);
-	}
-
-
-#filter-opt {
-	background:#ccc;
-	padding:1%;
-	color: #333;
-	text-align: center;
-	}
-
-#filter-opt:hover{
-	background: #6ba2d6;
-	color:#e0e0e0
-	}
-	
-@media screen and (max-width:480px){
-  .header .button{
-    display: block;
-    cursor: pointer;
-  }
-  .header .nav{
-    width:100%;
-    height:0;
-    pointer-events: none;
-    overflow: hidden;
-    transition: all .5s ease;
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .header .nav.activo{
-    height:50vh;
-    pointer-events: auto;
-  }
-  .header .ul{
-    flex-direction: column;
-  }
-  .header .li{
-    margin: 1rem 0;
-  }
-
 }
-
+	
 body {
 	font-family: 'Montserrat', sans-serif;
 	background: #e0e0e0; /* Used if the image is unavailable */
@@ -207,10 +164,22 @@ body {
 	font-size: 16px; /* Defafult font size*/
 }
 
+#filter-opt {
+	background:#ccc;
+	padding:1%;
+	color: #333;
+	text-align: center;
+}
+
+#filter-opt:hover{
+	background: #6ba2d6;
+	color:#e0e0e0
+}
+
 .contenedor {
 	width: 90%;
 	max-width: 1000px;
-	margin: 20px auto 80px auto;
+	margin: 20px auto 40px auto;
 
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -294,7 +263,7 @@ body {
 .paginacion {
 	/* position: fixed; */
 	bottom: 0;
-	background: #16113c;
+	/* background: #16113c; */
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -424,6 +393,24 @@ body {
 	border-radius: 15px;
 }
 
+footer{
+	width:100%;
+	margin-top: 20px;
+	background-color: #16113c;
+	padding: 1em;
+  
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:space-evenly;
+	align-items: center;
+	
+	color:white;
+  }
+
+footer:hover {
+	color: rgb(38, 198, 238);
+}
+
 @media screen and (max-width: 1780px) {
 
 	.contenedor {
@@ -516,4 +503,33 @@ body {
 		font-size: 0.65rem;
 	}
 
+@media screen and (max-width:480px){
+	.header .button{
+		display: block;
+ 	   	cursor: pointer;
+	}
+	.header .nav{
+		width:100%;
+		height:0;
+		pointer-events: none;
+		overflow: hidden;
+		transition: all .5s ease;
+	  
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.header .nav.activo{
+		height:50vh;
+		pointer-events: auto;
+	}
+	.header .ul{
+		flex-direction: column;
+	}
+	.header .li{
+		margin: 1rem 0;
+	}
+	  
+}
 }

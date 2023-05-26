@@ -93,6 +93,31 @@ main {
 	display: block;
 }
 
+@keyframes aparecer {
+	from {opacity:0;}
+	to {opacity:100;}
+}
+
+.formulario__mensaje-activo {
+animation: aparecer 1.5s;
+display: block;
+}
+
+.formulario__mensaje-exito-activo {
+animation: aparecer 1.5s;
+display: block;
+}
+
+.formulario__mensaje-exito {
+font-size: 30px;
+font-weight:bold;
+background: #119200;
+color: #fff;
+border: 2px solid #fff; 
+padding: 2vw;
+display: none;
+}
+
 .formulario__mensaje p {
 	margin: 0;
 }

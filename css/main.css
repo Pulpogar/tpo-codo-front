@@ -393,19 +393,36 @@ body {
 	border-radius: 15px;
 }
 
-footer{
+.footer{
 	width:100%;
 	margin-top: 20px;
 	background-color: #16113c;
 	padding: 1em;
-  
-	display: flex;
-	flex-flow: row wrap;
-	justify-content:space-evenly;
-	align-items: center;
+	display: flex; 
+	justify-content: space-between; 
 	
 	color:white;
   }
+
+.footer-items { 
+	width: 100%; 
+	margin: 10px; 
+	text-align: center;
+
+	font-size: 1em; 
+} 
+
+.footer-items .ul{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:center;
+	align-items: center;
+  	column-gap:2em;
+}
+  
+.footer-items .li:hover {
+	color: rgb(38, 198, 238);
+}
 
 @media screen and (max-width: 1780px) {
 
@@ -435,6 +452,13 @@ footer{
 	.contenedor .pelicula .textos {
 		font-size: 0.9em;
 	}
+
+	.footer-items { 
+		width: 80%; 
+	
+		font-size: 0.8em; 
+	} 
+
 }
 
 @media screen and (max-width: 700px) {
@@ -448,6 +472,13 @@ footer{
 	.contenedor .pelicula .textos {
 		font-size: 0.8em;
 	}
+
+	.footer-items { 
+		width: 70%; 
+	
+		font-size: 0.7em; 
+	} 
+
 }
 
 @media screen and (max-width: 500px) {
@@ -463,41 +494,6 @@ footer{
 	}
 
 }
-
-
-@media screen and (max-width: 400px) {
-
-	.contenedor {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 10px;
-	}
-
-	.contenedor .pelicula .textos {
-		font-size: 0.7em;
-	}
-
-}
-
-@media screen and (max-width: 200px) {
-
-	.contenedor {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		gap: 10px;
-	}
-
-	.contenedor .pelicula .textos {
-		font-size: 0.7em;
-	}
-
-	.filter {
-		font-size: 0.6rem;	
-	}
-
-	.filter select {
-		font-size: 0.65rem;
-	}
 
 @media screen and (max-width:480px){
 	.header .button{
@@ -528,4 +524,65 @@ footer{
 	}
 	  
 }
+
+@media screen and (max-width: 400px) {
+
+	.contenedor {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+
+	.contenedor .pelicula .textos {
+		font-size: 0.7em;
+	}
+
+	.footer-items { 
+		width: 50%; 
+	
+		font-size: 0.5em; 
+	} 
+
+	.footer-items .ul{
+		flex-direction: column;
+	}
+	.footer-items .li{
+		margin: 1rem 0;
+	}
+	
+}
+
+@media screen and (max-width: 200px) {
+
+	.contenedor {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 10px;
+	}
+
+	.contenedor .pelicula .textos {
+		font-size: 0.7em;
+	}
+
+	.filter {
+		font-size: 0.6rem;	
+	}
+
+	.filter select {
+		font-size: 0.65rem;
+	}
+
+	.footer-items { 
+		width: 40%; 
+	
+		font-size: 0.35em; 
+	} 
+
+	.footer-items .ul{
+		flex-direction: column;
+	}
+	.footer-items .li{
+		margin: 0.5rem 0;
+	}
+
 }

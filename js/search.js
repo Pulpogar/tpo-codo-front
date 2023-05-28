@@ -16,9 +16,9 @@ const main = document.getElementById('contenedor')
     Obtenemos las peliculas próximas a entrenarse o recientemente estrenadas (search.html)
 */
 
-getMovies(API_URL)
+getMoviesUpcoming(API_URL)
 
-async function getMovies(url){
+async function getMoviesUpcoming(url){
     const res = await fetch(url)
     const data = await res.json()
     displayMovies(data.results)
@@ -71,7 +71,7 @@ form.addEventListener('submit',(e) => {
     let searchValue = search.value 
     console.log(SEARCH_URL + searchValue) //pruebas api search
     if(searchValue && searchValue !=='') {
-        getMovies(SEARCH_URL + searchValue)
+        getMoviesUpcoming(SEARCH_URL + searchValue)
         resultSearch.innerText = `Resultado/s para: "${searchValue}"`
         searchValue=''
     } else {

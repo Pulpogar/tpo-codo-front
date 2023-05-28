@@ -10,13 +10,13 @@ const getGendres = async() => {
 			}
 		  };
 		  
-		const respuesta = await fetch('https://api.themoviedb.org/3/genre/movie/list?language=es', options)
+		const response = await fetch('https://api.themoviedb.org/3/genre/movie/list?language=es', options)
 			
-		console.log(respuesta);
+		console.log(response);
 
 		// Si la respuesta es correcta
-		if(respuesta.status === 200){
-			const datos = await respuesta.json();
+		if(response.status === 200){
+			const datos = await response.json();
 			
 			let generos = '';
 			datos.genres.forEach(genero => {
@@ -27,12 +27,12 @@ const getGendres = async() => {
 
 			document.getElementById('generos').innerHTML = generos;
 
-		} else if(respuesta.status === 401){
-			console.log('Pusiste la llave mal');
-		} else if(respuesta.status === 404){
-			console.log('La pelicula que buscas no existe');
+		} else if(response.status === 401){
+			console.log('Error de autenticación');
+		} else if(response.status === 404){
+			console.log('Recurso inexistente');
 		} else {
-			console.log('Hubo un error y no sabemos que paso');
+			console.log('Ha ocurrido un error');
 		}
 
 	} catch(error){

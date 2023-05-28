@@ -18,13 +18,24 @@ const getGendres = async() => {
 		if(response.status === 200){
 			const datos = await response.json();
 			
-			let generos = '';
+			let generos = `<table>
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>`;
 			datos.genres.forEach(genero => {
-				generos += `						
-						<h6 class="textos">${genero.id} | ${genero.name}</h6>
+				generos += `				
+					<tr>
+						<td>${genero.id}</td>
+						<td>${genero.name}</td>
+					</tr>			
 				`;
 			});
-
+			generos += `</tbody> 						 			  
+						</table>`;
 			document.getElementById('generos').innerHTML = generos;
 
 		} else if(response.status === 401){

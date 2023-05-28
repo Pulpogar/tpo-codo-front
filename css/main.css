@@ -241,6 +241,10 @@ body {
     transform: scale(1.02); 
 }
 
+.movie button {
+	color: #e0e0e0;
+}
+
 .navbar {
 	background: #100a1f;
 	width: 100%;

@@ -115,6 +115,11 @@ body {
 
 /* Código */
 
+:root{
+    --primary-color:#16113c;
+    --secondary-color: #e0e0e0;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -205,9 +210,8 @@ body {
 	/* margin-bottom: 80px; */
 }
 
-.contenedor .pelicula .card {
+/* .contenedor .pelicula .card {
 	width: 100%;
-	width: 20em;
 	border-radius: 15px;
 	font-weight: bold;
 	margin-bottom: 10px;
@@ -225,13 +229,44 @@ body {
  
 .contenedor .pelicula .card:hover {
     transform: scale(1.02); 
-}
+} */
 
-.contenedor .pelicula .textos {
+/* .contenedor .pelicula .textos {
 	font-size: 1rem;
 	font-weight: 600;
-	/* height: 100%; */
 	text-shadow: #fff;
+} */
+
+.movie{
+    width: 100%;
+    margin: 1rem;
+    background-color: var(--primary-color);
+    position: relative;
+    overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+    border-radius: 15px;
+    align-items: center;
+	transition: transform .2s;
+	align-items: center;
+	cursor: url(), pointer;
+	box-shadow:
+	inset 0 -3em 3em rgba(0,0,0,0.4),
+		  0.3em 0.3em 1em rgba(0,0,0,0.7);
+}
+
+.movie-info{
+    font-size: 0.75em;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 1px;
+}
+
+.movie:hover {
+    transform: scale(1.02); 
 }
 
 .navbar {
@@ -273,6 +308,16 @@ body {
 	justify-content: center;
 	gap: 20px;
 	padding: 10px;
+}
+
+.paginacion h5 {
+	width: 50%;
+	margin-top: 8px;
+	font-size: 1.5em;
+	background: #16113c;
+	color: #e0e0e0;
+	border-radius: 15px;
+	text-align: center;
 }
 
 .paginacion button {
@@ -497,6 +542,11 @@ body {
 		font-size: 0.6em;
 	}
 
+	.paginacion h5 {
+		width: 70%;
+		font-size: 1.2em;
+	}
+
 }
 
 @media screen and (max-width:480px){
@@ -552,6 +602,11 @@ body {
 	}
 	.footer-items .li{
 		margin: 1rem 0;
+	}
+
+	.paginacion h5 {
+		width: 65%;
+		font-size: 0.9em;
 	}
 	
 }

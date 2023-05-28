@@ -85,9 +85,9 @@ const getMovies = async(filter) => {
 			let movies = '';
 			datos.results.forEach(movie => {
 				movies += `
-					<div class="pelicula">
+					<div class="movie">
 						<img class="card" onclick="getMovie(${movie.id})" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}">
-						<h6 class="textos">${movie.title}</h6>
+						<div class="movie-info"><h3>${movie.title}</h3></div>
 					</div>
 				`;
 			});

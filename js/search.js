@@ -1,18 +1,19 @@
-const API_URL = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=a9c63244d8bcd22aea2ba23273760f77&page=1&language=es-ES"
+// const API_URL = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=a9c63244d8bcd22aea2ba23273760f77&page=1&language=es-ES"
+
+// URL Estrenos
+const API_URL = "https://api.themoviedb.org/3/movie/upcoming?api_key=3fed0b6eb79f693a90195039eaca3561&language=es-MX&page=1"
 
 const IMAGE_PATH = "https://image.tmdb.org/t/p/w1280"
 
 const SEARCH_URL = 'https://api.themoviedb.org/3/search/movie?&api_key=a9c63244d8bcd22aea2ba23273760f77&language=es-ES&query="'
 
-
-
 const form = document.getElementById('form')
 const search = document.getElementById('search')
+const resultSearch = document.getElementById('resultSearch')
 const main = document.getElementById('contenedor')
 
 /* 
-    Obtenemos las peliculas ordenadas por las mas populares
-    al momento de cargar la pagina de busqueda (search.html)
+    Obtenemos las peliculas próximas a entrenarse o recientemente estrenadas (search.html)
 */
 
 getMovies(API_URL)
@@ -71,6 +72,7 @@ form.addEventListener('submit',(e) => {
     console.log(SEARCH_URL + searchValue) //pruebas api search
     if(searchValue && searchValue !=='') {
         getMovies(SEARCH_URL + searchValue)
+        resultSearch.innerText = `Resultado/s para: "${searchValue}"`
         searchValue=''
     } else {
         window.location.reload()

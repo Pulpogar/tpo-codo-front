@@ -16,7 +16,7 @@ filter.addEventListener("change", function() {
 	getMovies(filter.value);
 });
 
-goToTop = () => window.scroll({top: 30, behavior: 'smooth'});
+goToTop = () => window.scroll({top: 0, behavior: 'smooth'});
 
 btnSiguiente.addEventListener('click', () => {
 	if(page < 1000){

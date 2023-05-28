@@ -356,7 +356,7 @@ body {
 	justify-content: center;
 	text-align: center;
 	height: 30px;
-	width: 50px;
+	width: 80px;
 	background: #241744;
 	color: #fff;
 	border-radius: 10px;
@@ -551,7 +551,7 @@ body {
 
 	.contenedor {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 		gap: 10px;
 	}
 

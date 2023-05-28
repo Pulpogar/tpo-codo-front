@@ -271,9 +271,7 @@ body {
 }
 
 .paginacion {
-	/* position: fixed; */
 	bottom: 0;
-	/* background: #16113c; */
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -441,6 +439,8 @@ body {
 	color: var(--tertiary-color);
 }
 
+
+/* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 1780px) {
 
 	.contenedor {

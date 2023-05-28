@@ -24,7 +24,7 @@ main {
 }
 
 .formulario {
-	margin-top: 50px;
+	margin-top: 30px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
@@ -147,7 +147,6 @@ display: none;
 	background: #241744;
 	color: #fff;
 	border-radius: 100px;
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	transition: .3s ease all;
 }

@@ -98,6 +98,7 @@
     transform: translateY(0);
 }
 
+/* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 1780px) {
 
 	.contenedor {
@@ -110,7 +111,6 @@
 		gap: 10px;
 	}    
 }
-
 
 @media screen and (max-width: 900px) {
 

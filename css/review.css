@@ -1,6 +1,6 @@
 .iframe_body {
     display:block;
-    background: #222
+    background: #16113c;
 }
 
 .rev_iframe {
@@ -8,11 +8,11 @@
     width:90%;
     height: 50vw;
     margin: 0 auto 3vw;
-    border: solid 2px #e3e6e7;
+    border: solid 2px #e0e0e0;
     box-shadow: 0 2px 15px #aaa;
 }
 
-
+/* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 1780px) {
 
 	.contenedor {
@@ -69,7 +69,6 @@
 	}
 
 }
-
 
 @media screen and (max-width: 400px) {
 

@@ -207,6 +207,7 @@ body {
 
 .contenedor .pelicula .card {
 	width: 100%;
+	width: 20em;
 	border-radius: 15px;
 	font-weight: bold;
 	margin-bottom: 10px;

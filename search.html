@@ -13,6 +13,8 @@
     />
     <script src="https://kit.fontawesome.com/2d9869cdb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/search.css" />
+
   </head>
   <body>
     <header class="header">
@@ -75,40 +77,18 @@
           <li class="li"><a href="contact.html" class="a"><i class="fa-solid fa-comment-dots"></i> Contacto</a></li>
         </ul>
       </nav>
+      <form id="form">
+        <input id="search" class="search" placeholder="Buscar...">
+      </form>
     </header>
 
-    <div id="modal_container" class="modal-container">
-      <div class="modal"></div>
-      <button id="close">Cerrar</button>
-    </div>
 
-    <div class="iframe-container">
-      <div class="embed-container">
-        <iframe
-          src="https://www.youtube.com/embed/-xDq2iPzTgo"
-          frameborder="0"
-          allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        >
-        </iframe>
-      </div>
-    </div>
 
-    <div class="filter" id="filter">
-      <label for="filter-opt">Mostrar primero</label>
-      <select id="filter-opt">
-        <option value="popular">Más populares</option>
-        <option value="top_rated">Mejor valoradas</option>
-      </select>
-    </div>
 
     <div class="contenedor" id="contenedor"></div>
 
-    <div class="paginacion">
-      <button id="btnAnterior"><i class="fa-solid fa-angle-left"></i></button>
-      <button id="btnSiguiente"><i class="fa-solid fa-angle-right"></i></button>
-    </div>
 
-    <script src="js/app.js"></script>
+    <script src="js/search.js"></script>
   </body>
   <footer>
     <div class="footer"> 

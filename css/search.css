@@ -17,9 +17,12 @@
     background-color: transparent;
     border: 2px solid var(--secondary-color);
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: 0.95rem;
     padding: 1rem;
     color: white;
+    margin-top: 10px;
+    height: 2em;
+    width: 100%;
 }
 
 .search::placeholder{
@@ -28,10 +31,7 @@
 .search:focus {
     outline: none;
 }
-/* main{
-    display: flex;
-    flex-wrap: wrap;
-} */
+
 .movie{
     width: 100%;
     margin: 1rem;
@@ -105,7 +105,7 @@
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
 		gap: 10px;
-	}
+	}    
 }
 
 
@@ -125,11 +125,10 @@
 	}
 }
 
-
 @media screen and (max-width: 300px) {
 
 	.contenedor {
         margin: 5px 0px auto;
 		grid-template-columns: repeat(1, 1fr);
-	}	
+	}
 }

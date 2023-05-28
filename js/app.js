@@ -16,14 +16,13 @@ filter.addEventListener("change", function() {
 	getMovies(filter.value);
 });
 
-goToTop = () => window.scroll({top: 100, behavior: 'smooth'});
+goToTop = () => window.scroll({top: 30, behavior: 'smooth'});
 
 btnSiguiente.addEventListener('click', () => {
 	if(page < 1000){
 		page += 1;
 		getMovies(filter.value);		
 	}
-	goToTop();
 });
 
 btnAnterior.addEventListener('click', () => {
@@ -31,7 +30,6 @@ btnAnterior.addEventListener('click', () => {
 		page -= 1;
 		getMovies(filter.value);
 	}
-	goToTop();
 });
 
 close.addEventListener('click', () => {
@@ -109,7 +107,7 @@ const getMovies = async(filter) => {
 	} catch(error){
 		console.log(error);
 	}
-
+	goToTop();
 }
 
 getMovies(filter.value);

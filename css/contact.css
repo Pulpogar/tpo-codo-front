@@ -2,11 +2,18 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	background: #e0e0e0;
 	color: #1d1d1d;
 	font-size: 16px; /* Defafult font size*/
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 main {
@@ -178,6 +185,9 @@ display: none;
 	border: 3px solid #bb2929;
 }
 
+footer {
+	margin-top: auto;
+}
 
 /* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 800px) {

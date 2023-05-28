@@ -118,18 +118,19 @@ body {
 :root{
     --primary-color:#16113c;
     --secondary-color: #e0e0e0;
+	--tertiary-color: rgb(38, 198, 238);
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .header{
   width:100%;
-  background-color: #16113c;
-  /* background-color: #282828; */
+  background-color: var(--primary-color);
   padding: 1em;
 
   display: flex;
@@ -137,7 +138,7 @@ body {
   justify-content:space-evenly;
   align-items: center;
   
-  color:white;
+  color: var(--secondary-color);
 }
 
 .header .button{
@@ -147,7 +148,7 @@ body {
 .header .svg{
   width:2em;
   height:2em;
-  fill:white;
+  fill: var(--secondary-color);
 }
 
 .header .ul{
@@ -159,18 +160,17 @@ body {
 	}
   
 .header .li:hover {
-	color: rgb(38, 198, 238);
+	color: var(--tertiary-color);
 }
 	
 body {
-	font-family: 'Montserrat', sans-serif;
-	background: #e0e0e0; /* Used if the image is unavailable */
-	color: #1d1d1d;
+	background: var(--secondary-color); /* Used if the image is unavailable */
+	color: var(--primary-color);
 	font-size: 16px; /* Defafult font size*/
 }
 
 #filter-opt {
-	background: rgb(38, 198, 238);
+	background: var(--tertiary-color);
 	padding:1%;
 	color: #333;
 	text-align: center;
@@ -178,19 +178,19 @@ body {
 }
 
 #filter-opt:hover{
-	background:#ffff;
+	background:var(--secondary-color);
 
 	color:#1d1d1d;
 	cursor: pointer;
 }
 
 .contenedor {
-	width: 90%;
+	width: 100%;
 	max-width: 1000px;
-	margin: 20px auto 40px auto;
+	margin: 0px auto;
 
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	gap: 10px;
 }
 
@@ -207,39 +207,11 @@ body {
 
 .contenedor .pelicula {
 	text-align: center;
-	/* margin-bottom: 80px; */
 }
-
-/* .contenedor .pelicula .card {
-	width: 100%;
-	border-radius: 15px;
-	font-weight: bold;
-	margin-bottom: 10px;
-	position: relative;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
-	transition: transform .2s;
-	align-items: center;
-	cursor: url(), pointer;
-	box-shadow:
-	inset 0 -3em 3em rgba(0,0,0,0.4),
-		  0.3em 0.3em 1em rgba(0,0,0,0.7);
-}
- 
-.contenedor .pelicula .card:hover {
-    transform: scale(1.02); 
-} */
-
-/* .contenedor .pelicula .textos {
-	font-size: 1rem;
-	font-weight: 600;
-	text-shadow: #fff;
-} */
 
 .movie{
     width: 100%;
-    margin: 1rem;
+    /* margin: 1rem; */
     background-color: var(--primary-color);
     position: relative;
     overflow: hidden;
@@ -257,7 +229,7 @@ body {
 
 .movie-info{
     font-size: 0.75em;
-    color: #eee;
+    color: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -287,16 +259,11 @@ body {
 	height: 40px;
 	width: 160px;
 	background: #100a1f;
-	color: #fff;
+	color: var(--primary-color);
 	border-radius: 0px;
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	transition: .3s ease all;
 	text-decoration: none;
-}
-
-.navbar a:hover {
-	background: #137c32;
 }
 
 .paginacion {
@@ -332,14 +299,12 @@ body {
 	background: #241744;
 	color: #fff;
 	border-radius: 100px;
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	transition: .3s ease all;
 }
 
 .paginacion button:hover {
-	/* background: #137c32; */
-	background: rgb(38, 198, 238);
+	background: var(--tertiary-color);
 }
 
 .modal-container {
@@ -393,7 +358,6 @@ body {
 	background: #241744;
 	color: #fff;
 	border-radius: 10px;
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	transition: .3s ease all;
 }
@@ -449,7 +413,7 @@ body {
 	padding: 1em;
 	display: flex; 
 	justify-content: space-between; 
-	
+	position: relative;	
 	color:white;
   }
 
@@ -470,7 +434,7 @@ body {
 }
   
 .footer-items .li:hover {
-	color: rgb(38, 198, 238);
+	color: var(--tertiary-color);
 }
 
 @media screen and (max-width: 1780px) {
